@@ -14,7 +14,7 @@ const resolvers = {
 
 const server = new GraphQLServer({
     typeDefs,
-    typeDefs,
+    resolvers,
 })
 
-server.start(() => console(`Server started`));
+server.start(() => console.log(`Server started on http://localhost:4000`));
