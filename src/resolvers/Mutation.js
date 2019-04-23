@@ -37,7 +37,7 @@ function post(parent, args, context, info) {
     return context.prisma.createLink({
         url: args.url,
         description: args.description,
-        postedBy: { connect: { id: user} },
+        postedBy: { connect: { id: userId} },
     })
 }
 
